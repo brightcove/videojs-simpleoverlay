@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head><title>Video.js QoS Plugin Example</title></head>
+<style>
+.example-description {
+  background-color: #ddd;
+  border: thin solid #333;
+  padding: 5px;
+}
+.vjs-sample-overlay {
+
+}
+</style>
+<link rel="stylesheet" href="libs/video-js-4.1.0/video-js.css">
+<script src="libs/video-js-4.1.0/video.js"></script>
+<body>
+<p class="example-description">
+  You can see a player configured with the simple overlay video.js plugin below.
+  Check out the page source to see an example of how to configure the plugin
+  yourself.
+</p>
+<video src="http://vjs.zencdn.net/v/oceans.mp4" class="video-js vjs-default-skin" data-setup="{}" controls></video>
+
+<!-- 
+  video.js will automatically initialize the video element since it's loaded in
+  the head of the document but you still need to configure and initialize the
+  plugin.
+-->
+<script src="src/videojs.simpleoverlay.js"></script>
+<script>
+var
+
+  // save a reference to the video element
+  video = document.querySelector('video'),
+
+  // save a reference to the video.js player for that element
+  player = videojs(video);
+
+// initialize the plugin with some custom options:
+player.simpleOverlay({
+  'vjs-sample-overlay': {
+    start: 2,
+    end: 10,
+    textContent: 'Hello, world!'
+  }
+});
+</script>
+</body>
+</html>
