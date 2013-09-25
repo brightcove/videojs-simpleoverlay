@@ -13,7 +13,7 @@ In your web page:
 ```html
 <video id="video" src="movie.mp4" controls></video>
 <script src="video.js"></script>
-<script src="dist/simpleoverlay.min.js"></script>
+<script src="dist/videojs.simpleoverlay.min.js"></script>
 <script>
 videojs('video', {}, function() {
   var player = this;
