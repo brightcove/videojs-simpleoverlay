@@ -20,7 +20,7 @@
       throws(block, [expected], [message])
   */
 
-  module('videojs.prototype.simpleOverlay', {
+  module('videojs.prototype.simpleoverlay', {
     // This will run before each test in this module.
     setup: function() {
       this.player = vjs(document.querySelector('#qunit-fixture video'));
@@ -30,7 +30,7 @@
   test('displays an overlay at the correct time', function() {
     var overlay;
     expect(3);
-    this.player.simpleOverlay({
+    this.player.simpleoverlay({
       'vjs-test-overlay': {
         start: 6,
         end: 9,
@@ -50,7 +50,7 @@
 
   test('hides overlays when they\'re not active', function() {
     expect(1);
-    this.player.simpleOverlay({
+    this.player.simpleoverlay({
       'vjs-test-overlay': {
         start: 6,
         end: 9,

@@ -18,7 +18,7 @@ In your web page:
 videojs('video', {}, function() {
   var player = this;
   // Create an overlay that will be shown starting at 1 second and removed after 7 seconds
-  player.simpleOverlay({
+  player.simplerverlay({
     'vjs-overlay': {
       start: 1,
       end: 7,

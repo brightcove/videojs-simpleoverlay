@@ -78,6 +78,6 @@
     };
   
   // register the plugin with video.js
-  vjs.plugin('simpleOverlay', simpleOverlay);
+  vjs.plugin('simpleoverlay', simpleOverlay);
 
 }(window.videojs));
