@@ -11,9 +11,10 @@ Download [videojs](http://www.videojs.com/)
 In your web page:
 
 ```html
-<video id="video" src="movie.mp4" controls></video>
-<script src="video.js"></script>
-<script src="dist/simpleoverlay.min.js"></script>
+<video id="video" class="video-js vjs-default-skin" src="movie.mp4" controls></video>
+<link href="http://vjs.zencdn.net/4.1/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/4.1/video.js"></script>
+<script src="dist/videojs-simpleoverlay.min.js"></script>
 <script>
 videojs('video', {}, function() {
   var player = this;
